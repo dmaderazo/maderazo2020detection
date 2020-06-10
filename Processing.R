@@ -17,10 +17,6 @@ for (foo in allFiles){
   system(command1)
   cPointCommand <- read.table(file = 'tempFile', header = FALSE)
   cPointCommand <- t(cPointCommand)
-  ## ~~~~~~ Warning! ~~~~~~
-  ## Think about what happens in the case where a chain
-  ## is continued on. This changes the number of lines 
-  ## in the header.
   # catch strings
   flags <- c("-n", "-ng")
   # Process header to retrieve numSims and numGp:
